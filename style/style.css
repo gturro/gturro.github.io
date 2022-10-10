@@ -1,0 +1,139 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  
+  html,body
+  {
+      width: 100%;
+      height: 100%;
+      margin: 0px;
+      padding: 0px;
+      overflow-x: hidden; 
+  }
+
+  .bg-img{
+    position: fixed;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    background-image: url("../media/gifs/cyber_background.gif");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: scroll;
+  }
+
+  .bg-img::after{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backdrop-filter: blur(10px) brightness(0.5); /* apply the blur */
+    
+    pointer-events: none; /* make the overlay click-through */
+  }
+  
+  
+  #wrapper{
+    margin-right: auto;
+    margin-left:  auto;
+
+    max-width: 960px;
+
+    padding-right: 10px;
+    padding-left:  10px;
+  }
+
+  .section {
+    text-align: left;
+    position: relative;
+    left: 50px;
+    right: auto;
+    top: 20px;
+    color: white;
+    background-color: black;
+    border: 1px white solid;
+  }
+
+  .innerTitle{
+    background-color: rgba(255, 255, 255, 0.1);
+    padding-top: 5px;
+    padding-left: 15px;
+  }
+  
+  #emptyProject{
+    margin: 1rem auto;
+    width: 30rem;
+    text-align: center;
+    border-radius: 10px;
+    padding: 1rem;
+    box-shadow: 0 2px 8px rgb(0 0 0 / 25%);
+    background: #55185f;
+    color: black;
+  }
+  
+  .visible,
+  .hidden {
+    overflow: hidden;
+  }
+  
+  .visible {
+    visibility: visible;
+    opacity: 1;
+    transition: opacity 1s linear;
+  }
+  
+  .hidden {
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 2s, opacity 1s linear;
+  }
+  
+  .hidden > div {
+    margin-top: -1000px;
+    transition: margin-top 0s 1s;
+  }
+  
+  img.emptyP-gif {
+    display: block;
+    margin-top: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 250px;
+    height: auto;
+  }
+  
+  .whoRU {
+    margin-top: 100px;
+  }
+  
+  .input {
+    background-color: black;
+    border: 0;
+    outline: none;
+    color: white;
+  }
+  
+  #sayHiBtn {
+    background-color: #FAF0E6;
+    color: white;
+    border: none;
+    padding: 5px;
+    font-size: 31px;
+    height: 50px;
+    width: 50px;
+    box-shadow: 0 2px 4px darkslategray;
+    cursor: pointer;
+    transition: all 0.4s ease;
+    border-radius: 75%;
+  }
+  
+  #sayHiBtn:active {
+    background-color: black;
+    box-shadow: 0 0 10px white;
+    transform: translateY(2px);
+  }
+  
+  
+  

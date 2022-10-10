@@ -1,40 +1,99 @@
 <!DOCTYPE html>
+<!--
+  -- GTG web page
+  -- @version 1.0
+  -- @date 08.10.2022
+  -- @url https://gturro.github.io
+-->
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <style>
-        h1, p, a { color:white; 
-                text-align: center;
-                top: 200px;
-              }
-        img.emptyP-gif{
-            display: block;
-            margin-top: 100px;
-            margin-left: auto;
-            margin-right: auto;
-            width: 250px;
-            height: auto;
-        }
-        .emptyProj-lk {
-            text-align: center;
-            margin-top: 20px;
-        }
-    </style>
-</head>
-<body style="background-color: black;">
-    <h1>Guillem Turró M06 landing page</h1>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta http-equiv="Content-Language" content="en">
+    <meta name="GTG">
+    <meta name="keywords" content="dev,java,html,css,javascript,js,game design">
+    <meta name="description" content="">
+    <meta property="og:locale" content="en_US">
+    <meta property="og:locale:alternate" content="es_ES">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="GTG">
+    <meta property="og:description" content="">
+    <meta property="og:url" content="https://gturro.github.io">
+    <meta name="viewport" content="width=device-width, user-scalable=1">
+    <link rel="icon" type="image/x-icon" href="">
+    <link rel="Shortcut Icon" type="image/ico" href="">
+    <link rel="stylesheet" href="./style/style.css">
+    <link rel="stylesheet" href="./dist/bootstrap-5.2.2/dist/css/bootstrap.min.css">
+    <script type="text/javascript" src="./dist/bootstrap-5.2.2/dist/js/bootstrap.bundle.min.js"></script>
 
-    <p>Welcome to my World</p>
-    
-    <img class=emptyP-gif src="./assets/mindblown_gif.gif" alt="mindblowing">
-    <div class = emptyProj-lk>
-        <a href="https://github.com/gturro/projecteEnBlanc.git" target="_blank">Check out my empty project...</a>
-        <p>Yeah pretty cool eh?</p>
+    <title>gtg</title>
+</head>
+<body id="home">
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark" >
+                <div class="container-fluid">
+                  <a class="navbar-brand" href="#">GTG</a>
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                      <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="./pages/projects.html">Projects</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="./pages/aboutMe.html">About me</a>
+                      </li>
+                      <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="./pages/daw2.html" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          DAW2
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                          <li><a class="dropdown-item" href="./pages/daw2/front.html">Front-end</a></li>
+                          <li><a class="dropdown-item" href="./pages/daw2/back.html">Back-end</a></li>
+                          <li><a class="dropdown-item" href="./pages/daw2/dessign.html">Dessign</a></li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+        </nav>
+    </header>
+    <div class="bg-img"></div>
+    <div id="wrapper">
+      <div class="section">
+        <h2>Home</h2>
+      </div>
+        <div class="section" style="visibility: hidden;">
+            <div id="emptyProject" class="hidden">
+                <div>
+                  <img class="emptyP-gif" src="https://c.tenor.com/tvFWFDXRrmMAAAAd/blow-mind-mind-blown.gif" alt="mindblowing">
+              
+                  <a class="emptyProj-lk" href="https://github.com/gturro/projecteEnBlanc.git" target="_blank">Check out my empty project...</a>
+                  <p>Yeah pretty cool eh?</p>
+                </div>    
+                
+                  </div>
+              
+                  <input type="button" id="hideBtn" value="Show";/>
+                  
+                  <div class="whoRU">
+                  <p>Hey i want to know who are you!</p>
+                  
+                  <input id="nameInput" class="input" type="text" placeholder="Your name">
+                  
+                  <button id="sayHiBtn">&#128075;</button>
+                  
+                  </div>
+        </div>
+        
     </div>
     
 
+    <script type="text/javascript" src="./scripts/main.js"></script>
+
 </body>
+
 </html>
