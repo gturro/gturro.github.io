@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../../style/style.css">
     <link rel="stylesheet" href="../../dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../../style/style.css">
     <script type="text/javascript" src="../../dist/js/bootstrap.bundle.min.js"></script>
     <title>Front end</title>
 </head>
@@ -43,14 +43,57 @@
         </div>
       </nav>
     </header>
+
     <div class="bg-img"></div>
-    <div class="section">
-      <div class="innerTitle">
+    <div class="content">
+      <div class="pageTitle">
         <h2>Front end</h2>
-        <h4>Javascript basics</h4>
-        <p>Minigame<p>
       </div>
-        <iframe width="90%" height="500" src="//jsfiddle.net/gturro_politecnic/80krgovf/15/embedded/js,html,css,result/dark/" allowfullscreen="allowfullscreen" allowpaymentrequest frameborder="0"></iframe>
+      <div class="embedContainer">
+        <div class="embedMenu">
+            <ul class="embedNav" type="none">
+              <li>
+                <a class="navLink" href="#"> Introducció a la programació web</a>
+              </li>
+              <li>
+                <a class="navLink" href="#">Objectes JavaScript</a>
+              </li>
+              <li>
+                <a class="navLink" href="#">Future subject 1</a>
+              </li>
+              <li>
+                <a class="navLink" href="#">Future subject 2</a>
+              </li>
+            </ul>
+        </div>
+
+
+        <div id="front-end-carousel" class="carousel slide">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="../../media/images/newGold.jpeg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+              <h3 class="carousel-item-title">Js minigame</h3>
+              <iframe width="100%" height="600" src="//jsfiddle.net/gturro_politecnic/80krgovf/15/embedded/js,html,css,result/dark/" allowfullscreen="allowfullscreen" allowpaymentrequest frameborder="0"></iframe>
+            </div>
+            <div class="carousel-item">
+              <img src="..." class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="..." class="d-block w-100" alt="...">
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#front-end-carousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#front-end-carousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
       </div>
-      </body>
+    </div>
+</body>
 </html>
