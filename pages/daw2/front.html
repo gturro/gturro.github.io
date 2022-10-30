@@ -5,13 +5,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../../dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="../../style/style.css">
     <script type="text/javascript" src="../../dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="../../style/style.css">
+    <script src="../../scripts/main.js"></script>
     <title>Front end</title>
 </head>
 <body>
     <header>
-      <nav class="navbar navbar-expand-lg navbar-dark bg-dark" >
+      <nav id="navbar" class="navbar navbar-expand-lg fixed-top navbar-dark bg-dark" >
         <div class="container-fluid">
           <a class="navbar-brand" href="#">GTG</a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -45,51 +46,60 @@
     </header>
 
     <div class="bg-img"></div>
+
     <div class="content">
       <div class="pageTitle">
         <h2>Front end</h2>
       </div>
+
       <div class="embedContainer">
-        <div class="embedMenu">
-            <ul class="embedNav" type="none">
-              <li>
-                <a class="navLink" href="#"> Introducció a la programació web</a>
-              </li>
-              <li>
-                <a class="navLink" href="#">Objectes JavaScript</a>
-              </li>
-              <li>
-                <a class="navLink" href="#">Future subject 1</a>
-              </li>
-              <li>
-                <a class="navLink" href="#">Future subject 2</a>
-              </li>
-            </ul>
+        <div class="embedNav">
+          <ul class="nav_links">
+            <li class="nav_link first_item">
+              <a href="#">Introducció a la programació web</a>
+              <ul class="subEmbedNav">
+                <li><a href="#">Estructures per emmagatzemar informació</a></li>
+                <li><a href="#">Interacció entre sistemes</a></li>
+                <li><a href="#">Programació estructurada</a></li>
+              </ul>
+            </li>
+            <li class="nav_link center-item">
+              <a href="#">Objectes JavaScript.</a>
+              <ul class="subEmbedNav">
+                <li><a href="#">Operation 1234</a></li>
+                <li><a href="#">loops and loops</a></li>
+              </ul>
+            </li>
+            <li class="nav_link last_item">
+              <a href="#">Gorillaz</a>
+            </li>
+          </ul>
         </div>
 
 
         <div id="front-end-carousel" class="carousel slide">
           <div class="carousel-inner">
-            <div class="carousel-item active">
+            <div class="carousel-item active"> <!--ITEM 1-->
+              <h3 class="carousel-item-title">New Gold - Gorillaz</h3>
               <img src="../../media/images/newGold.jpeg" class="d-block w-100" alt="...">
             </div>
-            <div class="carousel-item">
+            <div class="carousel-item"> <!--ITEM 2-->
               <h3 class="carousel-item-title">Js minigame</h3>
               <iframe width="100%" height="600" src="//jsfiddle.net/gturro_politecnic/80krgovf/15/embedded/js,html,css,result/dark/" allowfullscreen="allowfullscreen" allowpaymentrequest frameborder="0"></iframe>
             </div>
-            <div class="carousel-item">
-              <img src="..." class="d-block w-100" alt="...">
+            <div class="carousel-item"> <!--ITEM 3-->
+             
             </div>
-            <div class="carousel-item">
-              <img src="..." class="d-block w-100" alt="...">
+            <div class="carousel-item"> <!--ITEM 4-->
+             
             </div>
           </div>
           <button class="carousel-control-prev" type="button" data-bs-target="#front-end-carousel" data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="carousel-control-prev-icon " aria-hidden="true"></span>
             <span class="visually-hidden">Previous</span>
           </button>
           <button class="carousel-control-next" type="button" data-bs-target="#front-end-carousel" data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="carousel-control-next-icon " aria-hidden="true"></span>
             <span class="visually-hidden">Next</span>
           </button>
         </div>

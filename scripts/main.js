@@ -11,6 +11,21 @@ var emptyProjHidden = false;
 
 var guiriName = null;
 
+/*  Nav scroll  */
+var prevScrollpos = window.pageYOffset;
+window.onscroll = function() {
+  var currentScrollPos = window.pageYOffset;
+  if (prevScrollpos > currentScrollPos) {
+    document.getElementById("navbar").style.top = "0";
+  } else {
+    document.getElementById("navbar").style.top = "-50px";
+  }
+  prevScrollpos = currentScrollPos;
+}
+
+
+
+
 function hideProjDiv() {
   if (emptyProjDiv.className == "visible") {
     emptyProjDiv.className = "hidden";
@@ -47,5 +62,5 @@ function greetings(){
 }
 
 //Events listeners
-hideBtn.addEventListener('click', hideProjDiv);
-handBtn.addEventListener('click', greetings);
+/* hideBtn.addEventListener('click', hideProjDiv);
+handBtn.addEventListener('click', greetings); */
