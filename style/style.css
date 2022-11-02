@@ -114,6 +114,7 @@ a:active {
 
 .nav_link a {
   text-align: center;
+  width: 100%;
   padding: 1em 0;
 }
 
@@ -158,6 +159,9 @@ a:active {
 .subEmbedNav a:hover{
   background-color: #715870;
 }
+a:active {
+
+}
 
 /* ------------ CAROUSEL ------------ */
 .carousel {
@@ -177,11 +181,23 @@ a:active {
   margin: 0;
 }
 
+.carousel-item-title {
+  position: relative;
+}
 
+.carousel-item-title::after{
+  content: "";
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  height: 1px;
+  width: 100%;
+  background-color: white;
+}
 
 
 .carousel-control-next, .carousel-control-prev{
-  padding-top: 22%;
+  margin-top: 10%;
 }
 
 
