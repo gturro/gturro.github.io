@@ -32,16 +32,21 @@
           <ul id="nav-links" class="nav_links">
             <li class="nav_link first_item"> <!-- ITEM 1 -->
               <a id="embedItem1" href="#" data-bs-target="#front-end-carousel" data-bs-slide-to="0">Introducció a la programació web</a>
+              <ul class="subEmbedNav">
+                <li><a href="#" data-bs-target="#front-end-carousel" data-bs-slide-to="1">Estructures per emmagatzemar informació</a></li>
+                <li><a href="#" data-bs-target="#front-end-carousel" data-bs-slide-to="0">Interacció entre sistemes</a></li>
+                <li><a href="#" data-bs-target="#front-end-carousel" data-bs-slide-to="0">Programació estructurada</a></li>
+              </ul>
             </li>
             <li id="embedItem2" class="nav_link center-item"> <!-- ITEM 2 -->
-              <a href="#" data-bs-target="#front-end-carousel" data-bs-slide-to="1">Objectes JavaScript</a>
+              <a href="#" data-bs-target="#front-end-carousel" data-bs-slide-to="2">Objectes JavaScript</a>
               <ul class="subEmbedNav">
                 <li><a href="#">Operation 1234</a></li>
                 <li><a href="#">loops and loops</a></li>
               </ul>
             </li>
             <li class="nav_link last_item"> <!-- ITEM 4 -->
-              <a id="embedItem3" href="#" data-bs-target="#front-end-carousel" data-bs-slide-to="2">Gorillaz</a>
+              <a id="embedItem3" href="#" data-bs-target="#front-end-carousel" data-bs-slide-to="3">Gorillaz</a>
             </li>
           </ul>
         </div>
@@ -50,7 +55,7 @@
         <div id="front-end-carousel" class="carousel slide hidden">
           <div class="carousel-inner">
             <!--ITEM 1-->
-            <div id="carouselItem1" class="carousel-item active"> 
+            <div class="carousel-item active"> 
               <div class="description">
                 <h3 class="carousel-item-title">Introducció a la programació web</h3>
                 <br>
@@ -65,58 +70,46 @@
                 <p>Després de cada acció el mosntre atacarà.</p>
                 <p>Accions enregistrades en un log. Es mostra a la consola.</p>
               </div>
-              <div style="position: relative;">
-                <iframe width="100%" height="1000" src="//jsfiddle.net/gturro_politecnic/80krgovf/15/embedded/js,html,css,result/dark/" allowfullscreen="allowfullscreen" allowpaymentrequest frameborder="0"></iframe>
-                <button class="carousel-control-prev" type="button" data-bs-target="#front-end-carousel" data-bs-slide="prev">
-                  <span class="carousel-control-prev-icon " aria-hidden="true"></span>
-                  <span class="visually-hidden">Previous</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#front-end-carousel" data-bs-slide="next">
-                  <span class="carousel-control-next-icon " aria-hidden="true"></span>
-                  <span class="visually-hidden">Next</span>
-                </button>
-              </div>
+              <iframe width="100%" height="800" src="//jsfiddle.net/gturro_politecnic/80krgovf/15/embedded/js,html,css,result/dark/" allowfullscreen="allowfullscreen" allowpaymentrequest frameborder="0"></iframe>
             </div>
+
             <!--ITEM 2-->
-            <div id="carouselItem2" class="carousel-item"> 
+            <div class="carousel-item"> 
+              <div class="description">
+                <h3 class="carousel-item-title">Introducció a la programació web</h3>
+                <br>
+                  <ul>
+                    <li>Interacció entre sistemes</li>
+                  </ul>
+              </div>
+              <iframe width="100%" height="800" src="//jsfiddle.net/gturro_politecnic/9dbufv8m/276/embedded/result,js,html,css/dark/" allowfullscreen="allowfullscreen" allowpaymentrequest frameborder="0"></iframe>
+            </div>
+
+            <!--ITEM 3-->
+            <div  class="carousel-item"> 
               <div class="description">
                 <h3 class="carousel-item-title">Objects</h3>
                 <p>A front-end developer architects and develops websites and applications using web technologies (i.e., HTML, CSS, DOM, and JavaScript), which run on the Open Web Platform or act as compilation input for non-web platform environments</p>
               </div>
-              <div style="position: relative;">
-                <button class="carousel-control-prev" type="button" data-bs-target="#front-end-carousel" data-bs-slide="prev">
-                  <span class="carousel-control-prev-icon " aria-hidden="true"></span>
-                  <span class="visually-hidden">Previous</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#front-end-carousel" data-bs-slide="next">
-                  <span class="carousel-control-next-icon " aria-hidden="true"></span>
-                  <span class="visually-hidden">Next</span>
-                </button>
-              </div>
             </div>
-            <!--ITEM 3-->
-            <div id="carouselItem3" class="carousel-item"> 
+
+            <!--ITEM 4-->
+            <div class="carousel-item"> 
               <div class="description">
                 <h3 class="carousel-item-title">New Gold - Gorillaz</h3>
               </div>
-              <div style="position: relative;">
-                <img src="../../media/images/newGold.jpeg" class="d-block w-100" alt="...">
-                <button class="carousel-control-prev" type="button" data-bs-target="#front-end-carousel" data-bs-slide="prev">
-                  <span class="carousel-control-prev-icon " aria-hidden="true"></span>
-                  <span class="visually-hidden">Previous</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#front-end-carousel" data-bs-slide="next">
-                  <span class="carousel-control-next-icon " aria-hidden="true"></span>
-                  <span class="visually-hidden">Next</span>
-                </button>
-              </div>
-              
+              <img src="../../media/images/newGold.jpeg" class="d-block w-100" alt="...">
             </div>
           </div>
-            
+          <button class="carousel-control-prev" type="button" data-bs-target="#front-end-carousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon " aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#front-end-carousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon " aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
         </div>
-      </div>
-    </div>
     <script src="/scripts/embed.js"></script>
 </body>
 </html>

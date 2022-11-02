@@ -197,10 +197,16 @@ a:active {
 
 
 .carousel-control-next, .carousel-control-prev{
-  margin-top: 10%;
+  width: 7%;
 }
 
+.carousel-control-next {
+  right : -7%;
+}
 
+.carousel-control-prev{
+  left: -7%;
+}
 
 
 
@@ -251,10 +257,6 @@ a:active {
   color: black;
 }
 
-.visible,
-.hidden {
-  overflow: hidden;
-}
 
 .visible {
   visibility: visible;
